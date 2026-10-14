@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hovani</title>
+        <style>
+            .main{
+                display: flex;
+                gap: 30px;
+            }
+            .box{
+                height: 100px;
+                width: 100px;
+                border-radius:10px ;
+                transition: 1s ease;
+            }
+            .box1{
+                background-color: aqua;
+            }
+            .box1:hover{
+                transform: translateX(100px);
+            }
+            .box2{
+                background-color: slateblue;
+            }
+            .box2:hover{
+                transform: scale(1.4);
+            }
+            .box3{
+                background-color: purple;
+            }
+            .box3:hover{
+                transform: rotate(240deg);
+            }
+            .box4{
+                background-color: salmon;
+            }
+            .box4:hover{
+                background-color:blue;
+            }
+            .box5{
+                background-color: plum;
+            }
+            .box5:hover{
+                transform: translateY(-40px);
+            }
+            .box6{
+                background-color: skyblue;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            
+
+        </div>
+
+    </body>
+</html>

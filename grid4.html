@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid4</title>
+        <style>
+            .main{
+                display: grid;
+                height: 100vh;
+                grid-template-columns: 200px 1fr;
+                grid-template-areas: "sidebar header"
+                                       "sidebar content ";
+
+            }
+            .sidebar{
+                grid-area: sidebar;
+                background-color: teal;
+                color: white;
+            }
+            .header{
+                grid-area: header;
+                background-color: steelblue;
+                color: white;
+            }
+            .content{
+                display: grid;
+                grid-template-columns: repeat(3,150px);
+                grid-template-rows: repeat(3,150px);
+                grid-gap: 20px;
+                grid-area: content;
+                background-color: wheat;
+                align-items: center;
+                justify-content: center;
+            
+
+            }
+            .card{
+                width: 150px;
+                height: 150px;
+                background-color: blueviolet;
+                box-shadow: 3px 3px 5px;
+                margin-top: 167px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="sidebar">
+                <h3>dashboard</h3><br>
+                <p>Home</p>
+                <p>User</p>
+                <p>Settings</p>
+            </div>
+            <div class="header">
+                <h1>admin panel</h1>
+            </div>
+            <div class="content">
+                <div class="card">users</div>
+                <div class="card">order</div>
+                <div class="card">revenue</div>
+                <div class="card">products</div>
+                <div class="card">reports</div>
+                <div class="card">messages</div>
+                
+            </div>
+
+        </div>
+
+    </body>
+</html>

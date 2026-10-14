@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid3</title>
+        <style>
+            .main{
+                display: grid;
+                grid-template-rows: repeat(3,150px);
+                grid-template-areas: "bo1 bo2 bo3"
+                                       "bo1 bo4 bo5"
+                                       "bo6 bo6 bo6";
+                                       gap: 34px;
+
+
+            }
+            .b1{
+                grid-area: bo1;
+                background-color: blueviolet;
+                color: beige;
+            }
+            .b2{
+                grid-area: bo2;
+                background-color: violet;
+                color: aquamarine;
+
+            }
+            .b3{
+                grid-area: bo3;
+                background-color: tomato;
+                color: antiquewhite;
+            }
+            .b4{
+                grid-area: bo4;
+                background-color: teal;
+                color: chocolate;
+
+            }
+            .b5{
+                grid-area: bo5;
+                background-color: slateblue;
+                color: black;
+            }
+            .b6{
+                grid-area: bo6;
+                background-color: steelblue;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+           <div class="b1">1</div> 
+           <div class="b2">2</div>
+           <div class="b3">3</div>
+           <div class="b4">4</div>
+           <div class="b5">5</div>
+           <div class="b6">6/div>
+        </div>
+    </body>
+</html>

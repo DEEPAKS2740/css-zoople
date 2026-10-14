@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid</title>
+        <style>
+            .gridd{
+                display: grid;
+                /* grid-template-columns: 200px 200px 200px; */
+                /* grid-template-rows: 200px 400px 200px; */
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(3,300px);
+                /* gap: 20px; */
+                grid-gap:20px 67px ;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gridd">
+            <div style="background-color: beige;">1</div>
+            <div style="background-color: aquamarine;">2</div>
+            <div style="background-color: brown;">3</div>
+            <div style="background-color: cadetblue;">4</div>
+            <div style="background-color: cornflowerblue;">5</div>
+            <div style="background-color: teal;">6</div>
+            <div style="background-color: teal;">6</div>
+        </div>
+    </body>
+</html>

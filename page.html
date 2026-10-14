@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>page</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 250px;
+            height: 250px;
+            box-shadow: 0px 5px 15px gray ;
+            border-radius: 7px;
+            text-align: center;
+            transition: 1s ease;
+
+        }
+        .button{
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 7px;
+        }
+        .button:hover{
+            transform: scale(1.1);
+
+        }
+        .card:hover{
+            transform: translateY(-30px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2 style="margin-left: 300px;">our products</h2><br><br>
+    <div class="main">
+
+        <div class="card">
+            <img width="100px" height="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzRGvDCn7nSEZ4NUStHbrcwQGLL1M7AaUjuH4qo1Uwb1yVTso4bhN58R8&s=10" alt="">
+            <p>Running Shoes</p>
+           <p><b>₹1499</b></p> 
+            <button class="button">buy now</button>
+        </div>
+
+        <div class="card">
+            <img width="100px" height="100px" src="https://rukmini1.flixcart.com/image/1500/1500/xif0q/smartwatch/n/o/z/-enriched-transparent-original-imah76jstup5zdww.png?q=70" alt="">
+            <p>Smart watch</p>
+            <b>₹2489</b><br>
+            <button class="button">buy now</button>
+
+        </div>
+
+        <div class="card">
+         <img width="100px" height="100px" src="https://media-ik.croma.com/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/316749_0_oPT3hFQDdU.png?updatedAt=1753957654373" alt="">
+         <p>Headphones</p>
+         <b>₹989</b><br>
+         <button class="button">Buy now</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

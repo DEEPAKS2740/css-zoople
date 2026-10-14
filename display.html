@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>display</title>
+        <style>
+            .box{
+                background-color: beige;
+                color:navy ;
+                padding: 10px;
+                margin: 15px;
+            }
+            .block{
+                display: block;
+                width: 100%;
+                height: 150px;
+
+            }
+            .inline{
+                display: inline;
+                /* width: 100%;not applicable */
+                /* height: 150px;not applicable */
+            }
+            .inlineblock{
+                display: inline-block;
+                width: 50%;
+                height: 150px;
+            }
+            .none{
+                display: none;
+            }
+            .visibility{
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body><h1>Block example</h1>
+        <div class="box block">
+            Block1
+        </div>
+        <div class="box block">block 2</div>
+        <h2>inline example</h2>
+ <div class="box none">display none</div>
+        <div class="box inline">welcomee</div>
+        <div class="box inline">haiiiii</div>
+        <h2>inline block example</h2>
+        <div class="box inlineblock">helooo</div>
+        <div class="box inlineblock">haiii</div>
+       
+        <div class="box visibility"> box visibility</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique consectetur fugiat tempore blanditiis repellendus at aut officiis? Maxime quibusdam nostrum fuga dicta obcaecati quos molestias ad impedit, repudiandae voluptas!</p>
+    </body>
+</html>

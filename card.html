@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>card</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+            }
+            .cardcontainer{
+                perspective: 1000px;
+            }
+            .card{
+                width: 220px;
+                height: 300px;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: transform 0.8s;
+                cursor: pointer;
+            }
+            .cardcontainer:hover .card{
+                transform: rotateY(180deg);
+            }
+            .cardfrnt,
+            .cardbck{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                backface-visibility: hidden;
+                box-shadow: 0 10px 25px rgb(81, 80, 80);
+            }
+            .cardfrnt img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            .cardbck{
+                background: linear-gradient(135deg,violet,rgb(139, 139, 247));
+                color: white;
+                transform: rotateY(180deg);
+                /* display: flex; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cardcontainer">
+        <div class="card">
+            <div class="cardfrnt">
+                <img width="200px" src="https://static.vecteezy.com/system/resources/previews/046/409/821/non_2x/avatar-profile-icon-in-flat-style-male-user-profile-illustration-on-isolated-background-man-profile-sign-business-concept-vector.jpg" alt="profile">
+            </div>
+            <div class="cardbck">
+                <h2>Name:Deepak</h2> 
+                <h3>Software Development</h3>
+            </div>
+        </div>
+
+        </div>
+        
+    </body>
+</html>

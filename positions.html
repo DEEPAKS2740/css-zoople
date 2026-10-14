@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>positions</title>
+        <style>
+            .st{
+                position:static;
+                border: 2px solid beige;
+
+            }
+            .fp{
+                position: fixed;
+                border:2px solid red;
+                right: 0;
+                bottom: 0;
+            }
+            .stcky{
+                position: sticky;
+                border: 2px solid blue;
+                top: 0;
+            }
+            .rlt{
+                position: relative;
+                border: 4px solid bisque;
+                width:70% ;
+                height: 300px;
+            }
+            .abs{
+                position: absolute;
+                border: 2px solid navy;
+                width: 40%;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>static positions</h2>
+        <div class="st">
+            <h3>this is a static positioned element</h3>
+        </div>
+        <h2>fixed position</h2>
+        <div class="fp"><h3>this is a fixed position</h3></div>
+        <h2>sticky position<h2>
+            <div class="stcky"><h3>this is sticky position</h3></div>
+            <p style="padding-bottom: 1000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor nesciunt recusandae tempore neque alias! At, in perferendis non vitae voluptate, aut quam quis deleniti sapiente veritatis ullam laudantium necessitatibus!</p>
+            <h2>Relative position</h2>
+            <div class="rlt">this is a Relative position
+                <div class="abs">this is absolute position</div>
+            </div>
+
+    </body>
+</html>
